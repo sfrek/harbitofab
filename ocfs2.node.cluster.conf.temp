@@ -1,0 +1,7 @@
+node:
+	ip_port = 7777
+	ip_address = ${IPADRESS}
+	number = 0
+	name = ${NODENAME}
+	cluster = ${CLUSTERNAME}
+
