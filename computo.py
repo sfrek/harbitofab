@@ -7,7 +7,7 @@ def restart_service():
 	# Para poder realizar esta accion a de estar en el /root de cada nodo el script:
 	# service-compute.sh
 	# 
-	run("bash /root/service-compute.sh restart && ip link br-tun up")
+	run("bash /root/service-compute.sh stop; bash /root/service-compute.sh start; ip link set br-tun up")
 
 def active_syslog():
 	comando = "echo >> /etc/nova/nova.conf && echo 'use_syslog = True' >> /etc/nova/nova.conf"
