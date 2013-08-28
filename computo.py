@@ -1,6 +1,6 @@
 from fabric.api import *
 
-env.hosts = [ "computo01.wolkit.local", "computo02.wolkit.local", "computo04.wolkit.local", "computo05.wolkit.local", "computo06.wolkit.local" ]
+env.hosts = [ "computo01.sample.local", "computo02.sample.local", "computo04.sample.local", "computo05.sample.local", "computo06.sample.local" ]
 env.user = "root"
 
 def restart_service():
